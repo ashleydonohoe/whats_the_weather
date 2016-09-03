@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -34,7 +35,40 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="azo-br-Akk">
+                                <rect key="frame" x="0.0" y="319" width="600" height="239"/>
+                                <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="239" id="bw1-ce-jcs"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xFb-5e-GaE">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xFb-5e-GaE" id="o9e-IU-Vl7">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMb-F7-Ntc">
+                                <rect key="frame" x="0.0" y="28" width="600" height="278"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.14108494738594435" blue="0.28234275844444445" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OMb-F7-Ntc" secondAttribute="trailing" id="Jnq-5a-Nbk"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="azo-br-Akk" secondAttribute="bottom" constant="42" id="SXg-lb-syd"/>
+                            <constraint firstItem="OMb-F7-Ntc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nEX-wB-RAs"/>
+                            <constraint firstItem="azo-br-Akk" firstAttribute="top" secondItem="OMb-F7-Ntc" secondAttribute="bottom" constant="13" id="rpK-se-bmA"/>
+                            <constraint firstItem="OMb-F7-Ntc" firstAttribute="trailing" secondItem="azo-br-Akk" secondAttribute="trailing" id="ud4-Fu-JvR"/>
+                            <constraint firstItem="OMb-F7-Ntc" firstAttribute="leading" secondItem="azo-br-Akk" secondAttribute="leading" id="z4W-ry-nH4"/>
+                            <constraint firstItem="OMb-F7-Ntc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="zAT-8f-szC"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Current Weather" image="WeatherTabBarIcon" id="0Il-e3-a4f"/>
                 </viewController>
