@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -36,14 +37,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="azo-br-Akk">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="azo-br-Akk">
                                 <rect key="frame" x="0.0" y="319" width="600" height="239"/>
                                 <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="239" id="bw1-ce-jcs"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xFb-5e-GaE">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DayCell" id="xFb-5e-GaE">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xFb-5e-GaE" id="o9e-IU-Vl7">
@@ -56,7 +57,36 @@
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMb-F7-Ntc">
                                 <rect key="frame" x="0.0" y="28" width="600" height="278"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBG-tI-Ng1">
+                                        <rect key="frame" x="0.0" y="-8" width="600" height="44"/>
+                                        <color key="barTintColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
+                                        <textAttributes key="titleTextAttributes">
+                                            <color key="textColor" red="0.94491792929292928" green="0.94491792929292928" blue="0.94491792929292928" alpha="1" colorSpace="calibratedRGB"/>
+                                        </textAttributes>
+                                        <items>
+                                            <navigationItem title="What's The Weather" id="hhp-xu-cLB">
+                                                <barButtonItem key="leftBarButtonItem" style="plain" systemItem="add" id="N5G-yF-PLv">
+                                                    <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </barButtonItem>
+                                                <rightBarButtonItems>
+                                                    <barButtonItem image="Settings" id="GHu-LQ-rHY">
+                                                        <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </barButtonItem>
+                                                    <barButtonItem systemItem="refresh" id="WMy-FH-Ki7">
+                                                        <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </barButtonItem>
+                                                </rightBarButtonItems>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="yBG-tI-Ng1" firstAttribute="leading" secondItem="OMb-F7-Ntc" secondAttribute="leading" id="EUZ-7n-XWH"/>
+                                    <constraint firstAttribute="trailing" secondItem="yBG-tI-Ng1" secondAttribute="trailing" id="Jue-gM-AFi"/>
+                                    <constraint firstItem="yBG-tI-Ng1" firstAttribute="top" secondItem="OMb-F7-Ntc" secondAttribute="top" constant="-8" id="rca-LK-w1d"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.14108494738594435" blue="0.28234275844444445" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,7 +118,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KRL-97-Ux9">
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYN-kC-dkZ">
+                                <rect key="frame" x="3" y="22" width="600" height="44"/>
+                                <color key="barTintColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.94491792929999996" green="0.94491792929999996" blue="0.94491792929999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="What's The Weather" id="eO0-qZ-gi3">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="add" id="U5v-iM-yBC">
+                                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                        <rightBarButtonItems>
+                                            <barButtonItem image="Settings" id="L3m-4H-z9v">
+                                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </barButtonItem>
+                                            <barButtonItem systemItem="refresh" id="LYZ-Ui-N7G">
+                                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </barButtonItem>
+                                        </rightBarButtonItems>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KRL-97-Ux9">
                                 <rect key="frame" x="0.0" y="20" width="600" height="531"/>
                                 <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -96,7 +148,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ua6-I1-cQs" id="LwU-Dt-x0u">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
@@ -107,7 +159,10 @@
                         <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="KRL-97-Ux9" firstAttribute="top" secondItem="uzp-Wl-zer" secondAttribute="bottom" id="3EZ-bj-fPf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JYN-kC-dkZ" secondAttribute="trailing" constant="-23" id="8UA-MU-uVx"/>
                             <constraint firstItem="KRL-97-Ux9" firstAttribute="bottom" secondItem="MJO-hk-eb7" secondAttribute="top" id="TdF-Re-bAJ"/>
+                            <constraint firstItem="JYN-kC-dkZ" firstAttribute="leading" secondItem="Izb-bg-K5e" secondAttribute="leadingMargin" constant="-17" id="d97-Kj-FxU"/>
+                            <constraint firstItem="JYN-kC-dkZ" firstAttribute="top" secondItem="uzp-Wl-zer" secondAttribute="bottom" constant="2" id="ign-JD-E13"/>
                             <constraint firstAttribute="trailing" secondItem="KRL-97-Ux9" secondAttribute="trailing" id="laU-fv-EIY"/>
                             <constraint firstItem="KRL-97-Ux9" firstAttribute="leading" secondItem="Izb-bg-K5e" secondAttribute="leading" id="vyo-M9-lPf"/>
                         </constraints>
@@ -120,7 +175,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="RecentTabBarIcon" width="20" height="20"/>
-        <image name="WeatherTabBarIcon" width="20" height="20"/>
+        <image name="RecentTabBarIcon" width="30" height="30"/>
+        <image name="Settings" width="30" height="30"/>
+        <image name="WeatherTabBarIcon" width="30" height="30"/>
     </resources>
 </document>
