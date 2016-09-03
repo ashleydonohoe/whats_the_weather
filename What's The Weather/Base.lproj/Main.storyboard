@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
@@ -72,6 +74,9 @@
                                                 <rightBarButtonItems>
                                                     <barButtonItem image="Settings" id="GHu-LQ-rHY">
                                                         <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <connections>
+                                                            <segue destination="8u6-9X-sg5" kind="presentation" id="TxX-8c-wjh"/>
+                                                        </connections>
                                                     </barButtonItem>
                                                     <barButtonItem systemItem="refresh" id="WMy-FH-Ki7">
                                                         <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -105,6 +110,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="293" y="137"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="vRp-KW-6YL">
+            <objects>
+                <viewController title="Settings View Controller" id="8u6-9X-sg5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hvS-gd-AiA"/>
+                        <viewControllerLayoutGuide type="bottom" id="2pl-FE-ZT6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VY2-ZP-C59">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfm-zK-MGt">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.94491792929999996" green="0.94491792929999996" blue="0.94491792929999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="What's The Weather" id="TS4-4A-49j">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="save" id="Xxv-fJ-8t5">
+                                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="ob8-YM-Sww">
+                                            <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metric/Imperial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRT-gW-GxN">
+                                <rect key="frame" x="92" y="129" width="116" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUr-eE-otC">
+                                <rect key="frame" x="92" y="192" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LF3-Xa-UHc">
+                                <rect key="frame" x="306" y="126" width="166" height="29"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="D2M-Di-MIf"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Metric"/>
+                                    <segment title="Imperial"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dU-1s-RDd">
+                                <rect key="frame" x="306" y="192" width="166" height="202"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2pl-FE-ZT6" firstAttribute="top" secondItem="YUr-eE-otC" secondAttribute="bottom" constant="387" id="2Th-tc-oTZ"/>
+                            <constraint firstItem="LF3-Xa-UHc" firstAttribute="top" secondItem="pfm-zK-MGt" secondAttribute="bottom" constant="62" id="4dA-eK-HUG"/>
+                            <constraint firstItem="LF3-Xa-UHc" firstAttribute="trailing" secondItem="2dU-1s-RDd" secondAttribute="trailing" id="7Rr-gu-Qty"/>
+                            <constraint firstItem="LF3-Xa-UHc" firstAttribute="baseline" secondItem="lRT-gW-GxN" secondAttribute="firstBaseline" id="87A-ln-VWk"/>
+                            <constraint firstItem="LF3-Xa-UHc" firstAttribute="leading" secondItem="2dU-1s-RDd" secondAttribute="leading" id="AGn-PM-Otq"/>
+                            <constraint firstItem="lRT-gW-GxN" firstAttribute="leading" secondItem="YUr-eE-otC" secondAttribute="leading" id="G3X-I1-SxL"/>
+                            <constraint firstAttribute="trailing" secondItem="pfm-zK-MGt" secondAttribute="trailing" id="J4E-P7-B0q"/>
+                            <constraint firstItem="pfm-zK-MGt" firstAttribute="top" secondItem="hvS-gd-AiA" secondAttribute="bottom" id="NVN-W7-am7"/>
+                            <constraint firstItem="2pl-FE-ZT6" firstAttribute="top" secondItem="2dU-1s-RDd" secondAttribute="bottom" constant="206" id="d8u-MT-Pfw"/>
+                            <constraint firstItem="LF3-Xa-UHc" firstAttribute="leading" secondItem="lRT-gW-GxN" secondAttribute="trailing" constant="98" id="hlj-sl-tN0"/>
+                            <constraint firstItem="YUr-eE-otC" firstAttribute="top" secondItem="2dU-1s-RDd" secondAttribute="top" id="nmq-iN-8Ij"/>
+                            <constraint firstItem="2dU-1s-RDd" firstAttribute="top" secondItem="LF3-Xa-UHc" secondAttribute="bottom" constant="38" id="sk2-m9-Rcm"/>
+                            <constraint firstItem="pfm-zK-MGt" firstAttribute="leading" secondItem="VY2-ZP-C59" secondAttribute="leading" id="z2N-NJ-k9v"/>
+                            <constraint firstItem="lRT-gW-GxN" firstAttribute="leading" secondItem="VY2-ZP-C59" secondAttribute="leadingMargin" constant="72" id="zgd-98-uWy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tv9-Ho-7hp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1145" y="-260"/>
         </scene>
         <!--Recent Locations-->
         <scene sceneID="ezv-x1-B2S">
@@ -149,6 +236,9 @@
                                         <rightBarButtonItems>
                                             <barButtonItem image="Settings" id="L3m-4H-z9v">
                                                 <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <connections>
+                                                    <segue destination="8u6-9X-sg5" kind="presentation" id="JvK-ja-NpE"/>
+                                                </connections>
                                             </barButtonItem>
                                             <barButtonItem systemItem="refresh" id="LYZ-Ui-N7G">
                                                 <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -181,4 +271,7 @@
         <image name="Settings" width="38" height="38"/>
         <image name="WeatherTabBarIcon" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="JvK-ja-NpE"/>
+    </inferredMetricsTieBreakers>
 </document>
