@@ -53,7 +53,30 @@
                     <view key="view" contentMode="scaleToFill" id="Izb-bg-K5e">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KRL-97-Ux9">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="WeatherCell" id="ua6-I1-cQs">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ua6-I1-cQs" id="LwU-Dt-x0u">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KRL-97-Ux9" firstAttribute="top" secondItem="uzp-Wl-zer" secondAttribute="bottom" id="3EZ-bj-fPf"/>
+                            <constraint firstItem="KRL-97-Ux9" firstAttribute="bottom" secondItem="MJO-hk-eb7" secondAttribute="top" id="TdF-Re-bAJ"/>
+                            <constraint firstAttribute="trailing" secondItem="KRL-97-Ux9" secondAttribute="trailing" id="laU-fv-EIY"/>
+                            <constraint firstItem="KRL-97-Ux9" firstAttribute="leading" secondItem="Izb-bg-K5e" secondAttribute="leading" id="vyo-M9-lPf"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Recent Locations" image="RecentTabBarIcon" id="9SR-Fd-nc7"/>
                 </viewController>
