@@ -47,7 +47,7 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="What's The Weather" id="MWX-pp-7ur">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="add" id="YcK-yt-nab">
+                                        <barButtonItem key="leftBarButtonItem" image="Search" style="plain" id="YcK-yt-nab">
                                             <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </barButtonItem>
                                         <rightBarButtonItems>
@@ -61,11 +61,32 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wundergroundLogo_4c_rev_horz" translatesAutoresizingMaskIntoConstraints="NO" id="xqW-yS-GZd">
+                                <rect key="frame" x="490" y="498" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hEK-2b-IUA"/>
+                                    <constraint firstAttribute="width" constant="90" id="vMR-MZ-BLE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Weather Underground" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJB-Ra-fhE">
+                                <rect key="frame" x="282" y="507" width="200" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="57e-GQ-3pF"/>
+                                    <constraint firstAttribute="width" constant="200" id="Muf-QU-c5a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="xqW-yS-GZd" firstAttribute="leading" secondItem="rJB-Ra-fhE" secondAttribute="trailing" constant="8" symbolic="YES" id="4cO-tY-22F"/>
                             <constraint firstAttribute="trailing" secondItem="Ai7-r4-Jyy" secondAttribute="trailing" id="SMY-yL-JoJ"/>
+                            <constraint firstItem="COR-jq-c7a" firstAttribute="top" secondItem="rJB-Ra-fhE" secondAttribute="bottom" constant="8" symbolic="YES" id="XbF-FR-IBs"/>
+                            <constraint firstItem="COR-jq-c7a" firstAttribute="top" secondItem="xqW-yS-GZd" secondAttribute="bottom" constant="13" id="bMT-dX-wem"/>
                             <constraint firstItem="Ai7-r4-Jyy" firstAttribute="top" secondItem="gn2-Th-Ibh" secondAttribute="bottom" id="cZ3-jr-7v9"/>
+                            <constraint firstItem="xqW-yS-GZd" firstAttribute="trailing" secondItem="pXU-FQ-nCg" secondAttribute="trailingMargin" id="rsC-bi-j6a"/>
                             <constraint firstItem="Ai7-r4-Jyy" firstAttribute="leading" secondItem="pXU-FQ-nCg" secondAttribute="leading" id="t3T-h7-jc7"/>
                         </constraints>
                     </view>
@@ -95,7 +116,7 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="What's The Weather" id="xE3-Ls-ZK0">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="add" id="8cj-wO-gCw">
+                                        <barButtonItem key="leftBarButtonItem" image="Search" style="plain" id="8cj-wO-gCw">
                                             <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </barButtonItem>
                                         <rightBarButtonItems>
@@ -109,12 +130,33 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wundergroundLogo_4c_rev_horz" translatesAutoresizingMaskIntoConstraints="NO" id="XVt-e4-ELb">
+                                <rect key="frame" x="490" y="498" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="W0y-D5-3sc"/>
+                                    <constraint firstAttribute="height" constant="40" id="ie3-yg-3nu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Weather Underground" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xj6-Wp-8Xg">
+                                <rect key="frame" x="282" y="507" width="200" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Doz-2P-D1P"/>
+                                    <constraint firstAttribute="width" constant="200" id="KEX-Ts-wDx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="NEz-4v-yoJ" firstAttribute="top" secondItem="Xj6-Wp-8Xg" secondAttribute="bottom" constant="8" symbolic="YES" id="2FV-zo-CAz"/>
+                            <constraint firstItem="XVt-e4-ELb" firstAttribute="leading" secondItem="Xj6-Wp-8Xg" secondAttribute="trailing" constant="8" symbolic="YES" id="9Qe-fA-fIP"/>
                             <constraint firstItem="MaL-jr-JAO" firstAttribute="leading" secondItem="rGE-sy-Sg1" secondAttribute="leading" id="KZH-hP-eXh"/>
+                            <constraint firstItem="NEz-4v-yoJ" firstAttribute="top" secondItem="XVt-e4-ELb" secondAttribute="bottom" constant="13" id="LUs-Sk-nEq"/>
                             <constraint firstAttribute="trailing" secondItem="MaL-jr-JAO" secondAttribute="trailing" id="Y8Z-Yx-PSE"/>
                             <constraint firstItem="MaL-jr-JAO" firstAttribute="top" secondItem="y8u-wa-1eZ" secondAttribute="bottom" id="pOK-dw-M55"/>
+                            <constraint firstItem="XVt-e4-ELb" firstAttribute="trailing" secondItem="rGE-sy-Sg1" secondAttribute="trailingMargin" id="yDV-7s-BcB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Radar" image="globe" id="NYu-in-GkO"/>
@@ -143,7 +185,7 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="What's The Weather" id="hhp-xu-cLB">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="add" id="N5G-yF-PLv">
+                                        <barButtonItem key="leftBarButtonItem" image="Search" style="plain" id="N5G-yF-PLv">
                                             <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </barButtonItem>
                                         <rightBarButtonItems>
@@ -160,11 +202,32 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wundergroundLogo_4c_rev_horz" translatesAutoresizingMaskIntoConstraints="NO" id="w59-HC-FvU">
+                                <rect key="frame" x="490" y="498" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="bNw-AZ-lZc"/>
+                                    <constraint firstAttribute="width" constant="90" id="noo-Z6-Ai9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Weather Underground" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yC-Vf-Egm">
+                                <rect key="frame" x="282" y="507" width="200" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Xet-hd-giJ"/>
+                                    <constraint firstAttribute="width" constant="200" id="ne6-Bk-xmi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.14108494738594435" blue="0.28234275844444445" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2yC-Vf-Egm" secondAttribute="bottom" constant="8" symbolic="YES" id="01e-rm-bH1"/>
+                            <constraint firstItem="w59-HC-FvU" firstAttribute="leading" secondItem="2yC-Vf-Egm" secondAttribute="trailing" constant="8" symbolic="YES" id="J9Z-nY-U9U"/>
                             <constraint firstItem="yBG-tI-Ng1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KDm-pS-OVx"/>
                             <constraint firstItem="yBG-tI-Ng1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Lc9-bd-mjD"/>
+                            <constraint firstItem="w59-HC-FvU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Opx-da-biF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="w59-HC-FvU" secondAttribute="bottom" constant="13" id="g4W-46-Fgz"/>
                             <constraint firstAttribute="trailing" secondItem="yBG-tI-Ng1" secondAttribute="trailing" id="vkn-60-7IZ"/>
                         </constraints>
                     </view>
@@ -209,27 +272,12 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Metric/Imperial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRT-gW-GxN">
-                                <rect key="frame" x="20" y="129" width="116" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUr-eE-otC">
                                 <rect key="frame" x="20" y="204" width="76" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dU-1s-RDd">
-                                <rect key="frame" x="154" y="204" width="122" height="136"/>
-                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="122" id="DGC-yh-QZs"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="122" id="Pup-Mc-mOK"/>
-                                </constraints>
-                            </pickerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LF3-Xa-UHc">
                                 <rect key="frame" x="154" y="126" width="122" height="29"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -245,6 +293,21 @@
                                     <action selector="unitChanged:" destination="8u6-9X-sg5" eventType="valueChanged" id="hWS-gX-Pjf"/>
                                 </connections>
                             </segmentedControl>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dU-1s-RDd">
+                                <rect key="frame" x="154" y="204" width="122" height="136"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="DGC-yh-QZs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="122" id="Pup-Mc-mOK"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Units" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRT-gW-GxN">
+                                <rect key="frame" x="20" y="129" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -252,7 +315,7 @@
                             <constraint firstItem="YUr-eE-otC" firstAttribute="top" secondItem="lRT-gW-GxN" secondAttribute="bottom" constant="54" id="5RG-nE-BVC"/>
                             <constraint firstItem="2dU-1s-RDd" firstAttribute="leading" secondItem="YUr-eE-otC" secondAttribute="trailing" constant="58" id="Cfp-XV-6GF"/>
                             <constraint firstItem="2dU-1s-RDd" firstAttribute="top" secondItem="LF3-Xa-UHc" secondAttribute="bottom" constant="50" id="Jhd-H5-NrI"/>
-                            <constraint firstItem="LF3-Xa-UHc" firstAttribute="leading" secondItem="lRT-gW-GxN" secondAttribute="trailing" constant="18" id="KqN-IH-FA1"/>
+                            <constraint firstItem="LF3-Xa-UHc" firstAttribute="leading" secondItem="lRT-gW-GxN" secondAttribute="trailing" constant="94" id="KqN-IH-FA1"/>
                             <constraint firstItem="YUr-eE-otC" firstAttribute="leading" secondItem="lRT-gW-GxN" secondAttribute="leading" id="Y37-6z-iZ5"/>
                             <constraint firstItem="pfm-zK-MGt" firstAttribute="leading" secondItem="VY2-ZP-C59" secondAttribute="leading" id="Ybl-Wi-dmh"/>
                             <constraint firstAttribute="trailing" secondItem="pfm-zK-MGt" secondAttribute="trailing" id="eoC-Cs-LpS"/>
@@ -285,7 +348,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TY6-JT-dJI">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="442"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -293,7 +356,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KBC-hq-qfo" id="06d-MG-s4S">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
                                         </tableViewCellContentView>
@@ -309,7 +372,7 @@
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="What's The Weather" id="eO0-qZ-gi3">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="add" id="U5v-iM-yBC">
+                                        <barButtonItem key="leftBarButtonItem" image="Search" style="plain" id="U5v-iM-yBC">
                                             <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         </barButtonItem>
                                         <rightBarButtonItems>
@@ -326,16 +389,37 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wundergroundLogo_4c_rev_horz" translatesAutoresizingMaskIntoConstraints="NO" id="1sN-oV-nsb">
+                                <rect key="frame" x="490" y="506" width="90" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="blh-vl-bBc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by Weather Underground" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2u-Cb-KiK">
+                                <rect key="frame" x="282" y="515" width="200" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="rmK-1L-lsC"/>
+                                    <constraint firstAttribute="width" constant="200" id="xt6-2D-lJi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="TY6-JT-dJI" firstAttribute="top" secondItem="JYN-kC-dkZ" secondAttribute="bottom" id="7m7-SH-mSP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JYN-kC-dkZ" secondAttribute="trailing" constant="-20" id="8UA-MU-uVx"/>
-                            <constraint firstItem="TY6-JT-dJI" firstAttribute="leading" secondItem="JYN-kC-dkZ" secondAttribute="leading" id="RpJ-b8-bgF"/>
-                            <constraint firstItem="TY6-JT-dJI" firstAttribute="trailing" secondItem="JYN-kC-dkZ" secondAttribute="trailing" id="V88-it-VlY"/>
-                            <constraint firstItem="JYN-kC-dkZ" firstAttribute="leading" secondItem="Izb-bg-K5e" secondAttribute="leadingMargin" constant="-20" id="d97-Kj-FxU"/>
-                            <constraint firstItem="JYN-kC-dkZ" firstAttribute="top" secondItem="uzp-Wl-zer" secondAttribute="bottom" id="ign-JD-E13"/>
-                            <constraint firstItem="TY6-JT-dJI" firstAttribute="bottom" secondItem="MJO-hk-eb7" secondAttribute="top" id="kKN-oZ-hzz"/>
+                            <constraint firstItem="1sN-oV-nsb" firstAttribute="top" secondItem="TY6-JT-dJI" secondAttribute="bottom" id="45D-ye-8Qq"/>
+                            <constraint firstItem="MJO-hk-eb7" firstAttribute="top" secondItem="1sN-oV-nsb" secondAttribute="bottom" constant="5" id="GS1-uL-RXX"/>
+                            <constraint firstItem="JYN-kC-dkZ" firstAttribute="trailing" secondItem="TY6-JT-dJI" secondAttribute="trailing" id="Mk9-TL-5V3"/>
+                            <constraint firstItem="JYN-kC-dkZ" firstAttribute="leading" secondItem="Izb-bg-K5e" secondAttribute="leading" id="R1K-69-aLt"/>
+                            <constraint firstItem="U2u-Cb-KiK" firstAttribute="top" secondItem="TY6-JT-dJI" secondAttribute="bottom" constant="9" id="UFj-RY-vCJ"/>
+                            <constraint firstItem="JYN-kC-dkZ" firstAttribute="top" secondItem="uzp-Wl-zer" secondAttribute="bottom" id="X1m-tr-OR9"/>
+                            <constraint firstItem="1sN-oV-nsb" firstAttribute="trailing" secondItem="Izb-bg-K5e" secondAttribute="trailingMargin" id="ao5-y5-xdv"/>
+                            <constraint firstItem="U2u-Cb-KiK" firstAttribute="bottom" secondItem="MJO-hk-eb7" secondAttribute="top" id="bir-dX-Q6j"/>
+                            <constraint firstItem="1sN-oV-nsb" firstAttribute="leading" secondItem="U2u-Cb-KiK" secondAttribute="trailing" constant="8" symbolic="YES" id="bnV-0b-npN"/>
+                            <constraint firstItem="JYN-kC-dkZ" firstAttribute="leading" secondItem="TY6-JT-dJI" secondAttribute="leading" id="kZu-xG-5Z3"/>
+                            <constraint firstItem="TY6-JT-dJI" firstAttribute="top" secondItem="JYN-kC-dkZ" secondAttribute="bottom" id="kqr-HM-Vbz"/>
+                            <constraint firstAttribute="trailing" secondItem="JYN-kC-dkZ" secondAttribute="trailing" id="qwx-Z0-udR"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="5 Day Forecast" image="5DayBarIcon" id="9SR-Fd-nc7"/>
@@ -347,12 +431,14 @@
     </scenes>
     <resources>
         <image name="5DayBarIcon" width="30" height="30"/>
+        <image name="Search" width="38" height="38"/>
         <image name="Settings" width="38" height="38"/>
         <image name="WeatherTabBarIcon" width="30" height="30"/>
         <image name="camera-video" width="24" height="24"/>
         <image name="globe" width="24" height="24"/>
+        <image name="wundergroundLogo_4c_rev_horz" width="770" height="180"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TxX-8c-wjh"/>
+        <segue reference="JvK-ja-NpE"/>
     </inferredMetricsTieBreakers>
 </document>
