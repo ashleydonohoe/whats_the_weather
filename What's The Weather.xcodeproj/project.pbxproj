@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E00E08AB1D7BA5120096339B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E08AA1D7BA5120096339B /* SettingsViewController.swift */; };
 		E032A7801D7AADA2005587EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E032A77F1D7AADA2005587EB /* AppDelegate.swift */; };
 		E032A7821D7AADA2005587EB /* WeatherForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E032A7811D7AADA2005587EB /* WeatherForecastViewController.swift */; };
 		E032A7851D7AADA2005587EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E032A7831D7AADA2005587EB /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E00E08AA1D7BA5120096339B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E032A77C1D7AADA2005587EB /* What's The Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What's The Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E032A77F1D7AADA2005587EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E032A7811D7AADA2005587EB /* WeatherForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				E032A7861D7AADA2005587EB /* Assets.xcassets */,
 				E032A7881D7AADA2005587EB /* LaunchScreen.storyboard */,
 				E032A78B1D7AADA2005587EB /* Info.plist */,
+				E00E08AA1D7BA5120096339B /* SettingsViewController.swift */,
 			);
 			path = "What's The Weather";
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				E032A7821D7AADA2005587EB /* WeatherForecastViewController.swift in Sources */,
 				E032A7801D7AADA2005587EB /* AppDelegate.swift in Sources */,
+				E00E08AB1D7BA5120096339B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +255,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "What's The Weather/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ashleydonohoe.What-s-The-Weather";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashleydonohoe.Whats-The-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -262,7 +266,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "What's The Weather/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ashleydonohoe.What-s-The-Weather";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashleydonohoe.Whats-The-Weather";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -286,6 +290,7 @@
 				E032A7901D7AADA2005587EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
