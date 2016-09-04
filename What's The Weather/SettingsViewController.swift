@@ -24,6 +24,14 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         languageOptions = [Languages.English, Languages.Spanish, Languages.Italian, Languages.French, Languages.German]
     }
 
+    @IBAction func unitChanged(sender: AnyObject) {
+        if(unitChooser.selectedSegmentIndex == 0) {
+            print("Metric")
+        } else {
+            print("Imperial")
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -44,4 +52,16 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         print(languageOptions[row])
     }
+    
+    @IBAction func cancelChanges(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func saveChanges(sender: AnyObject) {
+        
+        // TODO: Save control state for units and language
+        
+        print("Changes saved")
+    }
+    
 }

@@ -196,9 +196,15 @@
                                     <navigationItem title="What's The Weather" id="TS4-4A-49j">
                                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="save" id="Xxv-fJ-8t5">
                                             <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="saveChanges:" destination="8u6-9X-sg5" id="5Ef-QW-1O7"/>
+                                            </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="ob8-YM-Sww">
                                             <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="cancelChanges:" destination="8u6-9X-sg5" id="zIS-I5-TXK"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -235,6 +241,9 @@
                                     <segment title="Imperial"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="unitChanged:" destination="8u6-9X-sg5" eventType="valueChanged" id="hWS-gX-Pjf"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.14108494739999999" blue="0.2823427584" alpha="1" colorSpace="calibratedRGB"/>
