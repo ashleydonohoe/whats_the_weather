@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E00E08AB1D7BA5120096339B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E08AA1D7BA5120096339B /* SettingsViewController.swift */; };
+		E00E08AD1D7BA6880096339B /* Languages.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E08AC1D7BA6880096339B /* Languages.swift */; };
 		E032A7801D7AADA2005587EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E032A77F1D7AADA2005587EB /* AppDelegate.swift */; };
 		E032A7821D7AADA2005587EB /* WeatherForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E032A7811D7AADA2005587EB /* WeatherForecastViewController.swift */; };
 		E032A7851D7AADA2005587EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E032A7831D7AADA2005587EB /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		E00E08AA1D7BA5120096339B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E00E08AC1D7BA6880096339B /* Languages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Languages.swift; sourceTree = "<group>"; };
 		E032A77C1D7AADA2005587EB /* What's The Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What's The Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E032A77F1D7AADA2005587EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E032A7811D7AADA2005587EB /* WeatherForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				E032A7881D7AADA2005587EB /* LaunchScreen.storyboard */,
 				E032A78B1D7AADA2005587EB /* Info.plist */,
 				E00E08AA1D7BA5120096339B /* SettingsViewController.swift */,
+				E00E08AC1D7BA6880096339B /* Languages.swift */,
 			);
 			path = "What's The Weather";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E032A7821D7AADA2005587EB /* WeatherForecastViewController.swift in Sources */,
+				E00E08AD1D7BA6880096339B /* Languages.swift in Sources */,
 				E032A7801D7AADA2005587EB /* AppDelegate.swift in Sources */,
 				E00E08AB1D7BA5120096339B /* SettingsViewController.swift in Sources */,
 			);

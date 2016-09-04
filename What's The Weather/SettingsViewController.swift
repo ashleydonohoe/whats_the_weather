@@ -8,28 +8,40 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
+    var languageOptions: [Languages] = []
+    @IBOutlet weak var unitChooser: UISegmentedControl!
+    @IBOutlet weak var languagePicker: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.languagePicker.delegate = self
+        self.languagePicker.dataSource = self
+        
+        // Set language options in picker
+        languageOptions = [Languages.English, Languages.Spanish, Languages.Italian, Languages.French, Languages.German]
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
     }
-    */
-
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return languageOptions.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return String(languageOptions[row])
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print(languageOptions[row])
+    }
 }

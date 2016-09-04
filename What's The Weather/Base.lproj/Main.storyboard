@@ -254,6 +254,10 @@
                             <constraint firstItem="pfm-zK-MGt" firstAttribute="top" secondItem="hvS-gd-AiA" secondAttribute="bottom" id="qtA-WJ-j1c"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="languagePicker" destination="2dU-1s-RDd" id="AlQ-5W-SFA"/>
+                        <outlet property="unitChooser" destination="LF3-Xa-UHc" id="NTe-92-PSJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tv9-Ho-7hp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
